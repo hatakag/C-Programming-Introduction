@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+  char x,y[ 9 ];
+  printf("Enter a string : " );
+  scanf("%s%s", &x,y);
+  printf("The printf was : \n");
+  printf("the character \"%s\"",x );
+  printf("and the string \"%s\"",y);
+  return 0;
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+void nameslice (char username[]) //trimleft// 
+{                                //trimright all space first//
+  int i=strlen(username)-1;
+  while (username[i]!=' ' && i>=0) i--;
+  if (username[i]==' ') strcpy(username,username+(i+1));
+}
+int main() 
+{
+  char s[30];
+  printf("ho va ten: ");__fpurge(stdin);gets(s);
+  nameslice(s);
+  printf("Ten: %s\n",s);
+}

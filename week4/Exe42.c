@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define PI 3.142
+int main()
+{
+  float r, c, ac, as, v;
+  printf("Radius is : ");
+  scanf("%f", &r);
+  printf("Radius = %f\n",r);
+  c=2.0 * PI * r;
+  printf("Circle's circumference = %f\n",c);
+  ac=PI * r * r;
+  printf("Circle's area = %f\n",ac);
+  as=4.0 * PI * r * r;
+  printf("Sphere's area = %f\n",as);
+  v=4.0/3.0 * PI * r * r * r;
+  printf("Sphere's volumn = %f\n",v);
+}

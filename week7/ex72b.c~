@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+  int i,j,x;
+  for (i=1;i<=10;i++)
+    {
+      for (j=i-1,x=1;x<=i;j--,x++)
+	printf(" ");printf("*");
+      printf("\n");
+    }
+  return 0;
+}

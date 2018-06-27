@@ -1,0 +1,47 @@
+emac& or emacs-nw
+emacs filename
+su as user root
+#mv /etc/alternatives/emacs /etc/alternatives/emacs.bk
+# ln -s /usr/bin/emacs-23.3 /etc/alternatives/emacs
+sudo apt-get install emacs24
+Control-x [Escape]x Meta-x
+C-x C-f filename (find and open a file)
+C-x C-s (save a file you are working on it)
+C-x C-w (save a new file)
+C-x C-c (exit emacs)
+M-</M-> (move to the top/end of the line)
+C-v/M-v (next screen/ previous screen)
+C-a/C-e (start/end of the current line)
+C-p/C-n (go up line/ go down line)
+M-f/M-b (forward/backward one word)
+M-x goto-line (go to a given line)
+C-spacebar (set a mark)
+C-w/M-w/C-y (delete/copy/paste)
+C-g (keyboard quit/stop a comman which is taking too long)
+C-x 1 (one window)
+C-x 2 (splits the screen into 2 windows)
+C-x o (move the cursor to the bottom window)
+C-x b (switch to buffer)
+C-s (search a string)
+C-r (search backward)
+M-% (replace a string by another)
+C-x 3 (open windows vertically)
+C-x C-q (toggle read-only buffer mode)
+C-x k (kill buffer)
+C-x u (undo)
+(setq inhibit-startup-message t) (deactivate greeting text)
+(global-set-key "\C-l" 'goto-line) (shortcut for goto-line)
+Set working mode for C coding
+(defun linux-c-mode ()
+"C mode with adjusted defaults for use with the Linux kernel."
+(interactive)
+(c-mode)
+(c-set-style "K&R")
+(setq tab-width 8)
+(setq indent-tabs-mode t)
+(setq c-basic-offset 8))
+(global-hl-line-mode 1) (set the highlight for current line minor mode)
+(line-number-mode 1) (show line-number in the mode line)
+(column-number-mode 1) (show column-number in the mode line)
+(set-cursor-color"red") (set cursor and mouse-pointer colours)
+(set-mouse-color"goldenrod")
